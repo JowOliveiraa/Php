@@ -9,11 +9,14 @@
 <body>
     <section>
         <h1>Gerando números aleatórios</h1>
-        <p>Gerando um número aleatorio entre 0 e 100...</p>
-        <br>
         <?php 
-            
+            $min = 0;
+            $max = 100;
+            $randomNumber = mt_rand($min, $max);
+            echo "<p>Gerando números aleatórios entre $min e $max...</p>";
+            echo "O número gerado foi $randomNumber";    
         ?>
+        <button onclick="javascript:document.location.reload()">&#9854;Gerar novamente</button>
     </section>
 </body>
 </html>

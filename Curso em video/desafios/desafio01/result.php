@@ -10,14 +10,12 @@
     <main>
         <h1>Resultado final</h1>
         <?php
-            $chosedNumber = $_GET["number"];
+            $chosedNumber = (int)$_REQUEST["number"] ?? 0;
             echo "O número escolhido foi <bold>$chosedNumber</bold><br>";
             echo "O seu antecessor é " .$chosedNumber - 1 ."<br>";
             echo "O seu sucessor é " .$chosedNumber + 1 ."<br>";
         ?>
-        <a href="desafio.php">
-            <button>&#8592;Voltar</button>
-        </a>
+            <button onclick="javascript:history.go(-1)">&#8592;Voltar</button>
     </main>
 </body>
 </html>

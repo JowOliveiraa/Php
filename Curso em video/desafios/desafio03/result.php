@@ -10,9 +10,11 @@
     <section>
         <h1>Resultado da conversão</h1>
         <?php 
-        $money = $_REQUEST["money"];
-        echo "$money";
+        $brl = (float)$_REQUEST["money"] ?? 0;
+        $dolar = $brl / 5.50;
+        echo "<p>Seus R$".number_format($brl, 2, ",", ".")." equivalem a $".number_format($dolar, 2, ",", ".")."</p>";
         ?>
+        <button onclick="javascript:history.back()" >Voltar</button>
     </section>
 </body>
 </html>
