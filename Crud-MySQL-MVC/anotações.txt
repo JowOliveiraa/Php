@@ -1,0 +1,3 @@
+Video de referencia: https://www.youtube.com/watch?v=7_eSjWJS_bg
+
+// eu extrai o metodo de conexão com o db para uma classe separada ao invés de criar os metodos de persintencia e conexão juntos igual no video.
